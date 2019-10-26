@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>guessing game</title>
 </head>
 <body>
-$END$
+<form action="/" method="POST">
+  <label>
+    Pomyśl liczbę z zakresu 0 - 1000, a ja ją zagadnę w max 10 próbach <br>
+    Zgaduję: {{ guess }} <br>
+    Twoja odpowiedz:
+<!--    <input type="hidden" name="maximum" value="{{ maximum }}">-->
+<!--    <input type="hidden" name="my_min" value="{{ minimum }}">-->
+    <input type="submit" name="ans" value="więcej">
+    <input type="submit" name="ans" value="mniej">
+    <input type="submit" name="ans" value="trafiłeś">
+  </label>
+
+</form>
 </body>
 </html>
